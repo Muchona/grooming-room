@@ -12,60 +12,73 @@
         .gold-text { color: #d4af37; }
         .gold-border { border-color: #d4af37; }
         .gold-bg { background-color: #d4af37; }
-        .hero-gradient { background: linear-gradient(to bottom, rgba(5,5,5,0.7), rgba(5,5,5,1)), url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&q=80&w=2070'); background-size: cover; background-position: center; }
+        .hero-gradient { 
+            background: linear-gradient(to bottom, rgba(5,5,5,0.8), rgba(5,5,5,1)), 
+            url('https://images.pexels.com/photos/1319461/pexels-photo-1319461.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); 
+            background-size: cover; 
+            background-position: center; 
+        }
     </style>
 </head>
 <body class="antialiased">
 
+    <nav class="flex justify-between items-center p-8 max-w-7xl mx-auto absolute top-0 left-0 right-0 z-50">
+        <div class="text-2xl font-bold tracking-widest uppercase">TGR <span class="gold-text">No. 1</span></div>
+        <div class="hidden md:flex space-x-8 uppercase text-xs tracking-[0.2em] font-light text-gray-400">
+            <a href="#menu" class="hover:gold-text transition">Services</a>
+            <a href="#" class="hover:gold-text transition">Our Story</a>
+            <a href="#" class="hover:gold-text transition">Contact</a>
+        </div>
+        <button class="border gold-border px-6 py-2 text-xs uppercase tracking-widest gold-text hover:gold-bg hover:text-black transition">Book Now</button>
+    </nav>
+
     <header class="relative h-screen flex items-center justify-center text-center px-4 hero-gradient">
-        <div class="max-w-3xl">
-            <p class="gold-text uppercase tracking-[0.3em] text-sm mb-4">Precision & Tradition Since 2026</p>
-            <h1 class="text-5xl md:text-8xl mb-8 leading-tight">The Grooming <br><span class="italic text-gray-300 underline decoration-gold-text underline-offset-8">Room No. 1</span></h1>
-            <p class="text-gray-300 font-light text-lg mb-10 max-w-xl mx-auto">Where mastery meets relaxation. Dedicated to the gentleman who understands that a haircut is a signature.</p>
-            <div class="flex flex-col md:row gap-6 justify-center">
-                <button class="gold-bg text-black font-bold py-4 px-12 uppercase tracking-widest text-sm hover:brightness-110 transition shadow-2xl">Reserve a Chair</button>
-            </div>
+        <div class="max-w-4xl pt-20">
+            <p class="gold-text uppercase tracking-[0.4em] text-xs mb-6">Precision & Tradition Since 2026</p>
+            <h1 class="text-6xl md:text-9xl mb-8 leading-tight">The Grooming <br><span class="italic text-gray-300 underline decoration-gold-text underline-offset-8">Room No. 1</span></h1>
+            <p class="text-gray-400 font-light text-lg mb-10 max-w-xl mx-auto">Luxury grooming services tailored for those who demand excellence. Experience the finest straight-razor shaves in the city.</p>
+            <button class="gold-bg text-black font-bold py-5 px-14 uppercase tracking-widest text-sm hover:brightness-110 transition shadow-2xl">Reserve a Chair</button>
         </div>
     </header>
 
-    <section class="max-w-7xl mx-auto px-8 py-32">
-        <div class="text-center mb-20">
+    <section id="menu" class="max-w-7xl mx-auto px-8 py-32">
+        <div class="text-center mb-24">
             <h2 class="text-4xl md:text-6xl mb-6 gold-text uppercase tracking-widest font-bold">The Menu</h2>
-            <div class="h-0.5 w-32 gold-bg mx-auto opacity-50"></div>
+            <div class="h-0.5 w-32 gold-bg mx-auto opacity-40"></div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div class="group">
-                <div class="h-64 overflow-hidden mb-6 grayscale hover:grayscale-0 transition duration-500">
-                    <img src="https://images.unsplash.com/photo-1621605815841-aa897828062a?auto=format&fit=crop&q=80&w=1000" class="w-full h-full object-cover">
+                <div class="h-80 overflow-hidden mb-8 grayscale hover:grayscale-0 transition duration-700">
+                    <img src="https://images.pexels.com/photos/3993323/pexels-photo-3993323.jpeg?auto=compress&cs=tinysrgb&w=800" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
                 </div>
-                <h3 class="text-xl mb-2 uppercase tracking-widest font-bold">Precision Cut</h3>
-                <p class="text-gray-500 font-light mb-4">Tailored styling and finish.</p>
-                <span class="text-xl gold-text font-bold">$55</span>
+                <h3 class="text-xl mb-3 uppercase tracking-[0.2em] font-bold">Precision Cut</h3>
+                <p class="text-gray-500 font-light mb-6 leading-relaxed">A tailored haircut including detailed consultation, premium hair wash, and professional styling to fit your lifestyle.</p>
+                <span class="text-2xl gold-text font-light tracking-widest">$55+</span>
             </div>
 
-            <div class="group md:-mt-8">
-                <div class="h-80 overflow-hidden mb-6 border-2 gold-border shadow-gold-text/20 shadow-2xl">
-                    <img src="https://images.unsplash.com/photo-1593702295094-ada74bc4a169?auto=format&fit=crop&q=80&w=1000" class="w-full h-full object-cover">
+            <div class="group md:-mt-12">
+                <div class="h-[400px] overflow-hidden mb-8 border-2 gold-border shadow-2xl shadow-gold-text/10">
+                    <img src="https://images.pexels.com/photos/2048548/pexels-photo-2048548.jpeg?auto=compress&cs=tinysrgb&w=800" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
                 </div>
-                <h3 class="text-2xl mb-2 uppercase tracking-widest font-bold gold-text italic">Royal Hot Towel Shave</h3>
-                <p class="text-gray-300 font-light mb-4">The ultimate straight-razor ritual.</p>
-                <span class="text-xl font-bold">$45</span>
+                <h3 class="text-2xl mb-3 uppercase tracking-[0.2em] font-bold gold-text italic underline">Royal Hot Towel Shave</h3>
+                <p class="text-gray-300 font-light mb-6 leading-relaxed">The ultimate 30-minute ritual. Multiple steamed towels, pre-shave oils, straight-razor precision, and luxury balm finish.</p>
+                <span class="text-3xl font-light tracking-widest">$45+</span>
             </div>
 
             <div class="group">
-                <div class="h-64 overflow-hidden mb-6 grayscale hover:grayscale-0 transition duration-500">
-                    <img src="https://images.unsplash.com/photo-1512690118299-a96062770f55?auto=format&fit=crop&q=80&w=1000" class="w-full h-full object-cover">
+                <div class="h-80 overflow-hidden mb-8 grayscale hover:grayscale-0 transition duration-700">
+                    <img src="https://images.pexels.com/photos/1813272/pexels-photo-1813272.jpeg?auto=compress&cs=tinysrgb&w=800" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
                 </div>
-                <h3 class="text-xl mb-2 uppercase tracking-widest font-bold">The Full Package</h3>
-                <p class="text-gray-500 font-light mb-4">Haircut and detailed beard work.</p>
-                <span class="text-xl gold-text font-bold">$90</span>
+                <h3 class="text-xl mb-3 uppercase tracking-[0.2em] font-bold">The Full Package</h3>
+                <p class="text-gray-500 font-light mb-6 leading-relaxed">The complete transformation. Our signature precision haircut paired with a detailed beard trim and grooming.</p>
+                <span class="text-2xl gold-text font-light tracking-widest">$90+</span>
             </div>
         </div>
     </section>
 
-    <footer class="py-20 text-center bg-stone-950 border-t border-white/5">
-        <p class="text-gray-600 text-[10px] tracking-[0.5em] uppercase">The Grooming Room No. 1 • 2026</p>
+    <footer class="py-20 text-center bg-black border-t border-white/5">
+        <p class="text-gray-700 text-[10px] tracking-[0.6em] uppercase">The Grooming Room No. 1 • Monaghan, Ireland</p>
     </footer>
 
 </body>
